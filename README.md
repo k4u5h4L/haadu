@@ -45,6 +45,12 @@
 git clone https://github.com/k4u5h4L/haadu.git && cd haadu/
 ```
 
+-    If you prefer to use ssh instead, run the following code:
+
+      ```
+      git clone git@github.com:k4u5h4L/haadu.git && cd haadu/
+      ```
+
 -   Install the dependencies
 
 ```
