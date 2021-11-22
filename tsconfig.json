@@ -14,17 +14,6 @@
         "resolveJsonModule": true,
         "isolatedModules": true
     },
-    "baseUrl": ".",
-    "paths": {
-        "@/components/*": ["components/*"],
-        "@/constants/*": ["constants/*"],
-        "@/types/*": ["@types/*"],
-        "@/utils/*": ["utils/*"],
-        "@/public/*": ["renderer/public/*"],
-        "@/prisma/*": ["prisma/*"],
-        "@/helpers/*": ["helpers/*"],
-        "@/styles/*": ["styles/*"],
-        "@/node_modules/*": ["node_modules/*"]
-    },
+    "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"],
     "exclude": ["node_modules", "renderer/next.config.js", "app", "dist"]
 }

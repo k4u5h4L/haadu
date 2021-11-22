@@ -1,24 +1,19 @@
-import React from 'react';
-import Head from 'next/head';
-import Link from 'next/link';
+import Albums from "@/components/Albums/Albums";
+import Banner from "@/components/Banner/Banner";
+import Featured from "@/components/Featured/Featured";
+import Navbar from "@/components/Navbar/Navbar";
+import Songs from "@/components/Songs/Songs";
 
 function Home() {
-  return (
-    <React.Fragment>
-      <Head>
-        <title>Home - Nextron (with-typescript)</title>
-      </Head>
-      <div>
-        <p>
-          ⚡ Electron + Next.js ⚡ -
-          <Link href="/next">
-            <a>Go to next page</a>
-          </Link>
-        </p>
-        <img src="/images/logo.png" />
-      </div>
-    </React.Fragment>
-  );
-};
+    return (
+        <>
+            <Navbar />
+            <Banner />
+            <Songs />
+            <Albums />
+            <Featured />
+        </>
+    );
+}
 
 export default Home;

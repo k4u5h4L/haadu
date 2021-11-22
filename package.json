@@ -29,8 +29,10 @@
         "@prisma/client": "^3.5.0",
         "electron-serve": "^1.1.0",
         "electron-store": "^8.0.1",
+        "music-metadata": "^7.11.4",
         "prisma": "^3.5.0",
-        "react-jinke-music-player": "^4.24.2"
+        "react-jinke-music-player": "^4.24.2",
+        "react-owl-carousel": "^2.3.3"
     },
     "devDependencies": {
         "@types/node": "^14.14.31",
