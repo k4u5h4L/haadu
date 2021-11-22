@@ -266,7 +266,7 @@ const Featured = () => {
                                 </div>
                             </OwlCarousel>
 
-                            <button
+                            {/* <button
                                 className="
                                     section__nav
                                     section__nav--interview
@@ -325,7 +325,7 @@ const Featured = () => {
                                         stroke-linejoin="round"
                                     />
                                 </svg>
-                            </button>
+                            </button> */}
                         </div>
                     </div>
                 </div>

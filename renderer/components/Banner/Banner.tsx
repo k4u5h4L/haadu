@@ -13,8 +13,9 @@ const Banner = () => {
             <OwlCarousel
                 className="home__carousel owl-carousel owl-theme"
                 id="flixtv-hero"
-                items={4.5}
+                items={4}
                 loop
+                center={true}
                 autoPlay
                 dots
             >

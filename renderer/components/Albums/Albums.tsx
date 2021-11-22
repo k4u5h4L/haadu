@@ -1,6 +1,18 @@
-import React from "react";
+import dynamic from "next/dynamic";
+
+const OwlCarousel = dynamic(
+    () => {
+        return import("react-owl-carousel");
+    },
+    { ssr: false }
+);
 
 const Albums = () => {
+    let scroller;
+    if (typeof window != "undefined") {
+        scroller = document.getElementById("subscriptions");
+    }
+
     return (
         <section className="section">
             <div className="container">
@@ -11,11 +23,17 @@ const Albums = () => {
 
                     <div className="col-12">
                         <div className="section__carousel-wrap">
-                            <div
-                                className="section__carousel owl-carousel"
+                            <OwlCarousel
+                                className="section__carousel owl-carousel owl-theme"
                                 id="subscriptions"
+                                items={6}
+                                margin={30}
+                                loop
+                                autoPlay
+                                dots
+                                nav={true}
                             >
-                                <div className="card">
+                                <div className="card item">
                                     <a
                                         href="details.html"
                                         className="card__cover"
@@ -62,7 +80,7 @@ const Albums = () => {
                                     </ul>
                                 </div>
 
-                                <div className="card">
+                                <div className="card item">
                                     <a
                                         href="details.html"
                                         className="card__cover"
@@ -109,7 +127,7 @@ const Albums = () => {
                                     </ul>
                                 </div>
 
-                                <div className="card">
+                                <div className="card item">
                                     <a
                                         href="details.html"
                                         className="card__cover"
@@ -156,7 +174,7 @@ const Albums = () => {
                                     </ul>
                                 </div>
 
-                                <div className="card">
+                                <div className="card item">
                                     <a
                                         href="details.html"
                                         className="card__cover"
@@ -203,7 +221,7 @@ const Albums = () => {
                                     </ul>
                                 </div>
 
-                                <div className="card">
+                                <div className="card item">
                                     <a
                                         href="details.html"
                                         className="card__cover"
@@ -250,7 +268,7 @@ const Albums = () => {
                                     </ul>
                                 </div>
 
-                                <div className="card">
+                                <div className="card item">
                                     <a
                                         href="details.html"
                                         className="card__cover"
@@ -295,7 +313,7 @@ const Albums = () => {
                                     </ul>
                                 </div>
 
-                                <div className="card">
+                                <div className="card item">
                                     <a
                                         href="details.html"
                                         className="card__cover"
@@ -340,7 +358,7 @@ const Albums = () => {
                                     </ul>
                                 </div>
 
-                                <div className="card">
+                                <div className="card item">
                                     <a
                                         href="details.html"
                                         className="card__cover"
@@ -387,7 +405,7 @@ const Albums = () => {
                                     </ul>
                                 </div>
 
-                                <div className="card">
+                                <div className="card item">
                                     <a
                                         href="details.html"
                                         className="card__cover"
@@ -432,7 +450,7 @@ const Albums = () => {
                                     </ul>
                                 </div>
 
-                                <div className="card">
+                                <div className="card item">
                                     <a
                                         href="details.html"
                                         className="card__cover"
@@ -479,7 +497,7 @@ const Albums = () => {
                                     </ul>
                                 </div>
 
-                                <div className="card">
+                                <div className="card item">
                                     <a
                                         href="details.html"
                                         className="card__cover"
@@ -524,7 +542,7 @@ const Albums = () => {
                                     </ul>
                                 </div>
 
-                                <div className="card">
+                                <div className="card item">
                                     <a
                                         href="details.html"
                                         className="card__cover"
@@ -570,9 +588,9 @@ const Albums = () => {
                                         <li>More than 500 movies</li>
                                     </ul>
                                 </div>
-                            </div>
+                            </OwlCarousel>
 
-                            <button
+                            {/* <button
                                 className="
                                     section__nav
                                     section__nav--cards
@@ -580,6 +598,7 @@ const Albums = () => {
                                 "
                                 data-nav="#subscriptions"
                                 type="button"
+                                // onClick={() => scroller.prev()}
                             >
                                 <svg
                                     width="17"
@@ -631,7 +650,7 @@ const Albums = () => {
                                         stroke-linejoin="round"
                                     />
                                 </svg>
-                            </button>
+                            </button> */}
                         </div>
                     </div>
                 </div>
