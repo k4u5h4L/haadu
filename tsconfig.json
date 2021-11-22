@@ -20,7 +20,7 @@
         "@/constants/*": ["constants/*"],
         "@/types/*": ["@types/*"],
         "@/utils/*": ["utils/*"],
-        "@/public/*": ["public/*"],
+        "@/public/*": ["renderer/public/*"],
         "@/prisma/*": ["prisma/*"],
         "@/helpers/*": ["helpers/*"],
         "@/styles/*": ["styles/*"],
