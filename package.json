@@ -1,0 +1,46 @@
+{
+    "private": true,
+    "name": "haadu",
+    "description": "Music player for the 21st century.",
+    "version": "1.0.0",
+    "author": {
+        "name": "Kaushal",
+        "email": "kaushal.v.bhat@gmail.com",
+        "url": "https://kaush.me"
+    },
+    "main": "app/background.js",
+    "scripts": {
+        "next:dev": "next dev",
+        "next:build": "next build",
+        "build": "nextron build",
+        "dev": "nextron",
+        "next:start": "next start",
+        "export": "next export",
+        "lint": "next lint",
+        "postinstall": "electron-builder install-app-deps",
+        "pack": "electron-builder --dir",
+        "builder:dist": "electron-builder",
+        "builder:dev": "electron-webpack dev",
+        "compile": "electron-webpack",
+        "dist": "yarn compile && electron-builder",
+        "dist:dir": "yarn dist --dir -c.compression=store -c.mac.identity=null"
+    },
+    "dependencies": {
+        "@prisma/client": "^3.5.0",
+        "electron-serve": "^1.1.0",
+        "electron-store": "^8.0.1",
+        "prisma": "^3.5.0",
+        "react-jinke-music-player": "^4.24.2"
+    },
+    "devDependencies": {
+        "@types/node": "^14.14.31",
+        "@types/react": "^16.9.49",
+        "electron": "^15.0.0",
+        "electron-builder": "^22.11.7",
+        "next": "^11.1.2",
+        "nextron": "^7.1.0",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "typescript": "^4.4.3"
+    }
+}

@@ -1,0 +1,12 @@
+appId: com.haadu.io
+productName: Haadu
+# copyright: Copyright © 2021 Kaushal
+directories:
+    output: dist
+    buildResources: resources
+files:
+    - from: .
+      filter:
+          - package.json
+          - app
+publish: null
