@@ -8,6 +8,8 @@
 # custom
 .env
 temp/
+*.flac
+*.mp3
 
 # electron
 dist/
